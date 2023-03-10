@@ -238,12 +238,12 @@ ul {
   align-items: center;
   height: 112px;
   border-radius: 5%;
-  background-color: f4f4fd;
+  background-color: #f4f4fd;
 
   margin-bottom: 8px;
 }
 .advantages-icon {
-  margin: 24px 100px 24px 100px;
+  /* margin: 24px 100px 24px 100px; */
 }
 
 .qualities-name {
@@ -378,10 +378,7 @@ img {
 }
 
 .team-social-link:is(:hover, :focus) {
-  background-color: blue;
-}
-.team-social-link:is(:hover, :focus) .team-social-icon {
-  fill: white;
+  background-color: #404bbf;
 }
 
 /* /Team section */
@@ -409,28 +406,29 @@ img {
 }
 
 .customers-link {
-  display: block;
+  display: flex;
   align-items: center;
+  justify-content: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-
-  padding: 16px 32px 16px 32px;
+  width: 168px;
+  height: 88px;
 }
 
 .customers-link:is(:hover, :focus) {
-  border-color: #4d5ae5;
+  border-color: #404bbf;
 }
 .customers-link:is(:hover, :focus) .customer-icon {
-  fill: #4d5ae5;
+  fill: #404bbf;
 }
 
 .customer-icon {
   fill: #8e8f99;
 }
 
-.customer-icon:is(:hover, :focus) {
+/* .customer-icon:is(:hover, :focus) {
   fill: ;
-}
+} */
 
 /* /Customers section */
 
@@ -468,7 +466,7 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 5;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 
   margin-bottom: 16px;
@@ -484,6 +482,9 @@ img {
 
 footer .team-social-link {
   background-color: #8e8f9961;
+}
+footer .social-link {
+  gap: 16px;
 }
 
 /* /Footer section */
@@ -508,8 +509,7 @@ footer .team-social-link {
   color: var(--porfolio-background-colour);
   background: var(--accent-colour);
   border-color: var(--accent-colour);
-  box-shadow: 0px 5px 15px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .main-button-item {
